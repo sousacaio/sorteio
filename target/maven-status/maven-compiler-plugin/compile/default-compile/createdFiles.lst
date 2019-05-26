@@ -1,0 +1,15 @@
+br\projecao\ltpw\dao\GeneroDAO.class
+br\projecao\ltpw\presenter\AlunoSvl.class
+br\projecao\ltpw\model\Disciplina.class
+br\projecao\ltpw\model\Genero.class
+br\projecao\ltpw\model\Professor.class
+br\projecao\ltpw\model\Curso.class
+br\projecao\ltpw\model\Pessoa.class
+br\projecao\ltpw\model\Turma.class
+br\projecao\ltpw\view\AlunoBean.class
+br\projecao\ltpw\dao\AlunoDAO.class
+br\projecao\ltpw\model\Departamento.class
+br\projecao\ltpw\model\Aluno.class
+br\projecao\ltpw\util\HibernateUtil.class
+br\projecao\ltpw\model\Endereco.class
+br\projecao\ltpw\presenter\GeneroSvl.class
