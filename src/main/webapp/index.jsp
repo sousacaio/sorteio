@@ -1,6 +1,4 @@
-<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
-<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
 <!------ Include the above in your HEAD tag ---------->
 <%@ taglib uri="http://java.sun.com/jsp/jstl/sql" prefix="sql" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
@@ -11,14 +9,7 @@
 <sql:query dataSource = "${snapshot}" var = "result">
     SELECT * from sorteios ORDER BY id DESC;
 </sql:query>
-<meta charset="utf-8">
-<nav class="navbar navbar-inverse">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <a class="navbar-brand display-1" style="margin-left: 120px" >SISTEMAS DE SORTEIO-SSO</a>
-        </div>
-    </div>
-</nav>
+  <jsp:include page = "head.jsp" />
 <div class="container">
     <div class="row">
         <div>
@@ -40,7 +31,7 @@
         </div>
     </div>
     <div class="row">
-        <h2>Últimos sorteios registrados:</h2>
+        <h2>Ãšltimos sorteios registrados:</h2>
         <div>
             <table class="table table-list-search">
                 <thead>
@@ -83,7 +74,7 @@
                 if (inputText != '')
                 {
                     $('.search-query-sf').remove();
-                    tableBody.prepend('<tr class="search-query-sf"><td colspan="6"><strong>Searching for: "'
+                    tableBody.prepend('<tr class="search-query-sf"><td colspan="6"><strong>Procurando por: "'
                             + $(that).val()
                             + '"</strong></td></tr>');
                 } else
